@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="FXForm2">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/core-0.0.1-20110720.162017-2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/validation-api-1.0.CR2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/hibernate-validator-4.0.0.Beta1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/slf4j-api-1.5.6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/slf4j-log4j12-1.5.6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/log4j-1.2.14.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
