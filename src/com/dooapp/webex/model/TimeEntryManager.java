@@ -33,6 +33,7 @@ public class TimeEntryManager {
                         total = total.add(d);
                     }
                     data.pieValueProperty().set(total.toMillis());
+                    data.nameProperty().bind(project.nameProperty());
                 }
             });
             pieChartData.add(data);

@@ -2,20 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2c377ea5-9128-46d8-a9bf-cf20f7de18c2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/dooapp/webex/model/TimeEntryManager.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/dooapp/webex/view/SceneModule.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/dooapp/webex/view/style.css" />
-      <change type="DELETED" beforePath="E:\JavaFXWebEx\src\com\dooapp\webex\com\dooapp\webex\model\TimeEntry.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\JavaFXWebEx\src\com\dooapp\webex\com\dooapp\webex\model\TimeEntryManager.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\JavaFXWebEx\src\com\dooapp\webex\com\dooapp\webex\view\SceneModule.properties" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/dooapp/webex/DemoModule.java" afterPath="$PROJECT_DIR$/src/com/dooapp/webex/DemoModule.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/dooapp/webex/Main.java" afterPath="$PROJECT_DIR$/src/com/dooapp/webex/Main.java" />
-      <change type="MOVED" beforePath="E:\JavaFXWebEx\src\com\dooapp\webex\com\dooapp\webex\model\ModelModule.java" afterPath="$PROJECT_DIR$/src/com/dooapp/webex/model/ModelModule.java" />
-      <change type="MOVED" beforePath="E:\JavaFXWebEx\src\com\dooapp\webex\com\dooapp\webex\model\Project.java" afterPath="$PROJECT_DIR$/src/com/dooapp/webex/model/Project.java" />
-      <change type="MOVED" beforePath="E:\JavaFXWebEx\src\com\dooapp\webex\com\dooapp\webex\model\ProjectManager.java" afterPath="$PROJECT_DIR$/src/com/dooapp/webex/model/ProjectManager.java" />
-      <change type="MOVED" beforePath="E:\JavaFXWebEx\src\com\dooapp\webex\com\dooapp\webex\model\ProjectType.java" afterPath="$PROJECT_DIR$/src/com/dooapp/webex/model/ProjectType.java" />
-      <change type="MOVED" beforePath="E:\JavaFXWebEx\src\com\dooapp\webex\com\dooapp\webex\view\SceneModule.java" afterPath="$PROJECT_DIR$/src/com/dooapp/webex/view/SceneModule.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/dooapp/webex/model/TimeEntryManager.java" afterPath="$PROJECT_DIR$/src/com/dooapp/webex/model/TimeEntryManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/dooapp/webex/view/SceneModule.java" afterPath="$PROJECT_DIR$/src/com/dooapp/webex/view/SceneModule.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/dooapp/webex/view/style.css" afterPath="$PROJECT_DIR$/src/com/dooapp/webex/view/style.css" />
     </list>
     <ignored path="JavaFXWebEx.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -74,19 +65,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ModelModule.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/dooapp/webex/model/ModelModule.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="55" selection-start="376" selection-end="376" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="ProjectManager.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/dooapp/webex/model/ProjectManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="5" selection-start="782" selection-end="782" vertical-scroll-proportion="0.0">
+            <state line="15" column="46" selection-start="311" selection-end="311" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -95,7 +77,7 @@
       <file leaf-file-name="Project.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/dooapp/webex/model/Project.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="5" selection-start="486" selection-end="486" vertical-scroll-proportion="0.0">
+            <state line="27" column="35" selection-start="631" selection-end="631" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -122,10 +104,8 @@
       <file leaf-file-name="SceneModule.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/dooapp/webex/view/SceneModule.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="52" column="18" selection-start="1604" selection-end="1604" vertical-scroll-proportion="0.45893225">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="108" column="72" selection-start="4123" selection-end="4123" vertical-scroll-proportion="1.2430704">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -133,7 +113,7 @@
       <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/dooapp/webex/view/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="4" selection-start="19" selection-end="19" vertical-scroll-proportion="0.0">
+            <state line="12" column="12" selection-start="176" selection-end="176" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -142,10 +122,8 @@
       <file leaf-file-name="TimeEntryManager.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/dooapp/webex/model/TimeEntryManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="0" selection-start="568" selection-end="568" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="35" column="67" selection-start="1407" selection-end="1407" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -194,6 +172,8 @@
         <option value="$PROJECT_DIR$/src/com/dooapp/webex/com/dooapp/webex/model/TimeEntryManager.java" />
         <option value="$PROJECT_DIR$/src/com/dooapp/webex/com/dooapp/webex/view/style.css" />
         <option value="$PROJECT_DIR$/src/com/dooapp/webex/com/dooapp/webex/view/SceneModule.java" />
+        <option value="$PROJECT_DIR$/src/com/dooapp/webex/view/style.css" />
+        <option value="$PROJECT_DIR$/src/com/dooapp/webex/model/TimeEntryManager.java" />
         <option value="$PROJECT_DIR$/src/com/dooapp/webex/view/SceneModule.java" />
       </list>
     </option>
@@ -228,7 +208,20 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Favorites" />
+      <pane id="PackagesPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JavaFXWebEx" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JavaFXWebEx" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -269,29 +262,75 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JavaFXWebEx" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JavaFXWebEx" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webex" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="view" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JavaFXWebEx" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JavaFXWebEx" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webex" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
+      <pane id="Scope">
+        <subPane subId="Problems" />
+      </pane>
+      <pane id="Favorites" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="GoToFile.includeJavaFiles" value="false" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="OverrideImplement.combined" value="true" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="recentsLimit" value="5" />
-    <property name="options.lastSelected" value="fileTemplates" />
+    <property name="options.lastSelected" value="project.propCompiler" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="dynamic.classpath" value="false" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
+    <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RunManager" selected="Application.Main">
     <configuration default="false" name="Main" type="Application" factoryName="Application" temporary="true">
@@ -426,8 +465,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1381" height="931" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -439,9 +478,9 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.10239044" sideWeight="0.7972973" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19543727" sideWeight="0.6701164" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2027027" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32988358" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -496,16 +535,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$USER_HOME$/Dev/javafx-sdk2.0-beta/rt/lib/jfxrt.jar!/javafx/scene/control/ListCell.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="0" selection-start="1447" selection-end="1447" vertical-scroll-proportion="0.7110266" />
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/core-0.0.1-20110720.162017-2.jar!/com/dooapp/fxform/i18n/ResourceBundleHelper.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="0" selection-start="569" selection-end="569" vertical-scroll-proportion="0.30164766" />
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/lib/core-0.0.1-20110720.162017-2.jar!/com/dooapp/fxform/view/FormFieldLabelFactory.class">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="0" selection-start="499" selection-end="499" vertical-scroll-proportion="0.25855514" />
@@ -521,60 +550,36 @@
         <state line="28" column="23" selection-start="1313" selection-end="1313" vertical-scroll-proportion="0.67902994" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/dooapp/webex/DemoModule.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="38" selection-start="471" selection-end="471" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/Dev/javafx-sdk2.0-beta/rt/lib/jfxrt.jar!/javafx/collections/ObservableList.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="17" selection-start="160" selection-end="160" vertical-scroll-proportion="0.107731305">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/dooapp/webex/model/ProjectType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="36" selection-start="153" selection-end="153" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/dooapp/webex/model/ProjectManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="5" selection-start="782" selection-end="782" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="5" column="17" selection-start="160" selection-end="160" vertical-scroll-proportion="0.107731305" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/dooapp/webex/model/ModelModule.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="55" selection-start="376" selection-end="376" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="14" column="55" selection-start="376" selection-end="376" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/dooapp/webex/model/Project.java">
+    <entry file="file://$PROJECT_DIR$/src/com/dooapp/webex/DemoModule.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="5" selection-start="486" selection-end="486" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/dooapp/webex/model/TimeEntryManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="0" selection-start="568" selection-end="568" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
+        <state line="21" column="38" selection-start="471" selection-end="471" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/dooapp/webex/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="34" selection-start="581" selection-end="581" vertical-scroll-proportion="0.0">
+        <state line="23" column="34" selection-start="581" selection-end="581" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Dev/javafx-sdk2.0-beta/rt/lib/jfxrt.jar!/HelloMedia.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="13" selection-start="127" selection-end="127" vertical-scroll-proportion="0.042358804">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Dev/javafx-sdk2.0-beta/rt/lib/jfxrt.jar!/MediaErrors.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -586,17 +591,41 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/dooapp/webex/view/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="4" selection-start="19" selection-end="19" vertical-scroll-proportion="0.0">
+        <state line="12" column="12" selection-start="176" selection-end="176" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/dooapp/webex/model/TimeEntryManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="67" selection-start="1407" selection-end="1407" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/dooapp/webex/model/ProjectManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="46" selection-start="311" selection-end="311" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/dooapp/webex/model/Project.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="35" selection-start="631" selection-end="631" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/dooapp/webex/model/ProjectType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="36" selection-start="153" selection-end="153" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/dooapp/webex/view/SceneModule.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="18" selection-start="1604" selection-end="1604" vertical-scroll-proportion="0.45893225">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="108" column="72" selection-start="4123" selection-end="4123" vertical-scroll-proportion="1.2430704">
+          <folding />
         </state>
       </provider>
     </entry>
