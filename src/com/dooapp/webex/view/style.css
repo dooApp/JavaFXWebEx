@@ -1,6 +1,7 @@
 .title {
     -fx-font-size: 30;
     -fx-text-fill: dimgray;
+    -fx-effect: dropshadow(gaussian, gray, 5.0, 0.0, 2.0, 2.0);
 }
 
 .sub-title {
@@ -16,6 +17,10 @@
 #time-label {
     -fx-font-size: 50;
     -fx-text-fill: blue;
+}
+
+#main-pane {
+    -fx-background-image: url("logo.png");
 }
 
 .form-label {

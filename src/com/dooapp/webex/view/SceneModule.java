@@ -26,6 +26,9 @@ import javafx.scene.chart.PieChart;
 import javafx.scene.control.Button;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.Label;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
+import javafx.scene.layout.StackPane;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Line;
 import javafx.util.Duration;
@@ -64,6 +67,7 @@ public class SceneModule extends AbstractModule {
                         .children(createTimerNode(), createPieNode())
                         .spacing(50)
                         .build())
+                .id("main-pane")
                 .build();
     }
 
@@ -148,7 +152,7 @@ public class SceneModule extends AbstractModule {
      * @return
      */
     private Node createTimerNode() {
-        int radius = 75;
+        int radius = 100;
         Button startButton = ButtonBuilder.create()
                 .onAction(new EventHandler<ActionEvent>() {
                     public void handle(ActionEvent actionEvent) {
@@ -162,17 +166,15 @@ public class SceneModule extends AbstractModule {
                 .id("big-button")
                 .build();
         startButton.textProperty().bind(startButtonText);
-        Line line = LineBuilder.create()
-                .stroke(Color.BLACK)
-                .startX(0.0)
-                .startY(radius)
-                .endX(0.0)
-                .endY(-radius)
-                .strokeWidth(3.0)
-                .build();
+        ImageView stroke = ImageViewBuilder.create()
+                                .image(new Image(SceneModule.class.getResource("stroke.png").toString()))
+                                .fitHeight(radius)
+                                .fitWidth(radius)
+                                .opacity(0.5)
+                                .build();
         rotateTransition = RotateTransitionBuilder.create()
-                .duration(Duration.valueOf(30000))
-                .node(line)
+                .duration(Duration.valueOf(15000))
+                .node(stroke)
                 .fromAngle(0.0)
                 .toAngle(360)
                 .cycleCount(RotateTransition.INDEFINITE)
@@ -197,17 +199,17 @@ public class SceneModule extends AbstractModule {
                 }
             }
         });
-        Group clock = GroupBuilder.create()
+        StackPane clock = StackPaneBuilder.create()
                 .children(
-                        CircleBuilder.create()
-                                .radius(radius)
-                                .fill(Color.WHITE)
-                                .stroke(Color.GREY)
-                                .strokeWidth(10.0)
+                        ImageViewBuilder.create()
+                                .image(new Image(SceneModule.class.getResource("clock_bg.png").toString()))
+                                .fitHeight(radius * 2)
+                                .fitWidth(radius * 2)
                                 .build(),
-                        line
+                        stroke
 
-                ).build();
+                )
+                .build();
         return VBoxBuilder.create()
                 .children(
                         clock,
