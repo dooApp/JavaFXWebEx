@@ -1,6 +1,6 @@
 package com.dooapp.webex;
 
-import com.dooapp.webex.com.dooapp.webex.model.Project;
+import com.dooapp.webex.model.Project;
 import com.google.inject.AbstractModule;
 import com.google.inject.Provides;
 
@@ -17,7 +17,7 @@ public class DemoModule extends AbstractModule {
 
     @Provides
     protected Project[] createProjects() {
-        return new Project[] {
+        return new Project[]{
                 new Project("Project 1"),
                 new Project("Project 2")
         };

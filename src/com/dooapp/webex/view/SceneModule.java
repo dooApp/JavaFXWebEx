@@ -1,13 +1,16 @@
-package com.dooapp.webex.com.dooapp.webex.view;
+package com.dooapp.webex.view;
 
 import com.dooapp.fxform.FXForm;
-import com.dooapp.webex.com.dooapp.webex.model.Project;
-import com.dooapp.webex.com.dooapp.webex.model.ProjectManager;
+import com.dooapp.webex.model.Project;
+import com.dooapp.webex.model.ProjectManager;
+import com.dooapp.webex.model.TimeEntryManager;
 import com.google.inject.AbstractModule;
 import com.google.inject.Provides;
 import com.google.inject.Singleton;
 import javafx.animation.Animation;
+import javafx.animation.Interpolator;
 import javafx.animation.RotateTransition;
+import javafx.beans.binding.StringBinding;
 import javafx.beans.property.ObjectProperty;
 import javafx.beans.property.StringProperty;
 import javafx.beans.value.ChangeListener;
@@ -18,12 +21,17 @@ import javafx.event.EventHandler;
 import javafx.scene.Group;
 import javafx.scene.Node;
 import javafx.scene.Parent;
+import javafx.scene.chart.PieChart;
 import javafx.scene.control.Button;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.Label;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Line;
 import javafx.util.Duration;
+
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 /**
  * User: dooApp
@@ -38,32 +46,45 @@ public class SceneModule extends AbstractModule {
 
     @Provides
     @Singleton
-    public SceneBuilder createSceneBuilder(ProjectManager projectManager) {
-        return SceneBuilder.create().root(createRoot(projectManager));
+    public SceneBuilder createSceneBuilder(ProjectManager projectManager, TimeEntryManager timeEntryManager) {
+        this.timeEntryManager = timeEntryManager;
+        return SceneBuilder.create()
+                .root(createRoot(projectManager));
+                //.stylesheets(SceneModule.class.getResource("style.css").toString());
     }
 
     private Parent createRoot(ProjectManager projectManager) {
         return BorderPaneBuilder.create()
                 .top(createTitleNode())
                 .left(createProjectNode(projectManager))
-                .center(createTimerNode())
+                .center(HBoxBuilder.create().children(createTimerNode(), createPieNode()).build())
                 .build();
     }
 
+    private TimeEntryManager timeEntryManager;
+
     private ObjectProperty<Project> selectedProject = new ObjectProperty<Project>();
 
+    /**
+     * Creates the project selection/edition Node
+     *
+     * @param projectManager
+     * @return
+     */
     private javafx.scene.Node createProjectNode(final ProjectManager projectManager) {
         final ChoiceBox<Project> projectChoiceBox = ChoiceBoxBuilder.<Project>create()
                 .items(projectManager.getProjects()).build();
-        projectChoiceBox.getSelectionModel().selectFirst();
         final Group formRoot = GroupBuilder.create().build();
         selectedProject.bind(projectChoiceBox.getSelectionModel().selectedItemProperty());
         selectedProject.addListener(new ChangeListener<Project>() {
             public void changed(ObservableValue<? extends Project> observableValue, Project project, Project project1) {
                 formRoot.getChildren().clear();
                 formRoot.getChildren().add(createForm(selectedProject.get()));
+                startDate = null;
+                stopTimer();
             }
         });
+        projectChoiceBox.getSelectionModel().selectFirst();
         return VBoxBuilder.create().children(
                 HBoxBuilder.create().children(
                         new Label("Project"),
@@ -82,40 +103,85 @@ public class SceneModule extends AbstractModule {
         return new FXForm(project);
     }
 
+    /**
+     * Creates the title Node
+     *
+     * @return
+     */
     private Node createTitleNode() {
-        return new Label("JavaFX 2.0 WebEx by dooApp");
+        return LabelBuilder.create()
+                .style("title-label")
+                .text("JavaFX 2.0 WebEx by dooApp")
+                .build();
     }
 
     private StringProperty startButtonText = new StringProperty("Start");
 
     private RotateTransition rotateTransition;
 
+    private final static DateFormat TIME_FORMAT = new SimpleDateFormat("mm:ss");
+
+    private Date startDate;
+
+    /**
+     * Creates the timer Node
+     *
+     * @return
+     */
     private Node createTimerNode() {
+        int radius = 75;
         Button startButton = ButtonBuilder.create()
                 .onAction(new EventHandler<ActionEvent>() {
                     public void handle(ActionEvent actionEvent) {
                         if (rotateTransition.getStatus() == Animation.Status.RUNNING) {
-                            rotateTransition.stop();
+                            stopTimer();
                         } else {
-                            rotateTransition.play();
+                            startTimer();
                         }
                     }
                 }).build();
+        startButton.textProperty().bind(startButtonText);
         Line line = LineBuilder.create()
-                .stroke(Color.GREEN)
+                .stroke(Color.BLACK)
                 .startX(0.0)
-                .startY(0)
+                .startY(radius)
                 .endX(0.0)
-                .endY(-25)
+                .endY(-radius)
+                .strokeWidth(3.0)
                 .build();
-        rotateTransition = RotateTransitionBuilder.create().duration(Duration.valueOf(60000)).node(line).fromAngle(0.0).toAngle(360).cycleCount(RotateTransition.INDEFINITE).build();
+        rotateTransition = RotateTransitionBuilder.create()
+                .duration(Duration.valueOf(30000))
+                .node(line)
+                .fromAngle(0.0)
+                .toAngle(360)
+                .cycleCount(RotateTransition.INDEFINITE)
+                .interpolator(Interpolator.LINEAR)
+                .build();
+        Label elapsedTimeLabel = LabelBuilder.create().build();
+        // Low-level binding
+        elapsedTimeLabel.textProperty().bind(new StringBinding() {
+
+            {
+                bind(rotateTransition.currentTimeProperty(), selectedProject);
+            }
+
+            @Override
+            protected String computeValue() {
+                rotateTransition.currentTimeProperty().get();
+                if (startDate != null) {
+                    return TIME_FORMAT.format(new Date(new Date().getTime() - startDate.getTime()));
+                } else {
+                    return "Press start to start timer";
+                }
+            }
+        });
         Group clock = GroupBuilder.create()
                 .children(
                         CircleBuilder.create()
-                                .radius(25)
+                                .radius(radius)
                                 .fill(Color.WHITE)
-                                .stroke(Color.BLACK)
-                                .strokeWidth(2.0)
+                                .stroke(Color.GREY)
+                                .strokeWidth(10.0)
                                 .build(),
                         line
 
@@ -123,10 +189,36 @@ public class SceneModule extends AbstractModule {
         return VBoxBuilder.create()
                 .children(
                         clock,
+                        elapsedTimeLabel,
                         startButton
                 )
                 .fillWidth(true)
                 .build();
+    }
+
+    protected void startTimer() {
+        startDate = new Date();
+        rotateTransition.play();
+        startButtonText.set("Stop");
+    }
+
+    protected void stopTimer() {
+        if (startDate != null) {
+            recordDuration();
+            rotateTransition.stop();
+            startButtonText.set("Start");
+        }
+    }
+
+    private void recordDuration() {
+        Duration duration = Duration.valueOf((new Date().getTime() - startDate.getTime()));
+        System.out.println("Recording " + duration + "@" + selectedProject.get());
+        timeEntryManager.addDuration(duration, selectedProject.get());
+    }
+
+    private Node createPieNode() {
+        PieChart pieChart = PieChartBuilder.create().data(timeEntryManager.getPieChartData()).build();
+        return pieChart;
     }
 
 }

@@ -1,7 +1,7 @@
 package com.dooapp.webex;
 
-import com.dooapp.webex.com.dooapp.webex.model.ModelModule;
-import com.dooapp.webex.com.dooapp.webex.view.SceneModule;
+import com.dooapp.webex.model.ModelModule;
+import com.dooapp.webex.view.SceneModule;
 import com.google.inject.Guice;
 import com.google.inject.Injector;
 import javafx.application.Application;
